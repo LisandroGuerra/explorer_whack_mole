@@ -43,7 +43,7 @@
     background-size: cover;
   }
 
-  .grid-item:hover {
+  .has-mole:hover {
     animation-name: show-mole;
     animation-duration: .6s;   
   }
