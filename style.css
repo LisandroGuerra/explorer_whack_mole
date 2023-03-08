@@ -35,10 +35,26 @@
   }
   
   .grid-item {
-    padding: 2.8rem;
-    text-align: center;
+    padding: 6rem 8rem;
+    margin: 4rem;
+    background-image: url("assets/mole6.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  .grid-item img {
-    width: 18rem;    
+  .grid-item:hover {
+    animation-name: show-mole;
+    animation-duration: .6s;   
+  }
+
+
+ /* The animation code */
+@keyframes show-mole {
+    0%   {background-image: url("assets/mole6.svg");}
+    20%  {background-image: url("assets/mole5.svg");}
+    40%  {background-image: url("assets/mole4.svg");}
+    60%  {background-image: url("assets/mole3.svg");}
+    80%  {background-image: url("assets/mole2.svg");}
+    100% {background-image: url("assets/mole1.svg");}
   }
